@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    --margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+<p>
+<a href="#" class="button">Anat</a>
+<a href="#" class="button">Rest1</a>
+<a href="#" class="button">Rest2</a>
+<a href="#" class="button">Mov1</a>
+<a href="#" class="button">Mov2</a>
+<a href="#" class="button">Peer1</a>
+<a href="#" class="button">Peer2</a>
+<a href="#" class="button">Peer3</a>
+</p>
+
+
+<body>
+<p>
+<a href="#Plots" class="button">Plots</a>
+<button class="button">HeadMonitor</button>
+<input type="button" class="button" value="IT1T2MeanepiMeandwi">
+<a href="#Registration" class="button">Registration</a>
+<button class="button">Segmentation</button>
+<input type="button" class="button" value="ALFF/FALFF">
+<button class="button">Seed_FC</button>
+</p>
+
+<p></p>
+<h2 style="text-align: center;">Subject ID:</h2>
+<link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="w3-container">
+</div>
+
+
+<div class="w3-content w3-display-container slider" id="div1">
+  <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/skullstrip_vis_a/_montage_a0/skull_vis_a.png" style="width:80%;margin: auto;">
+  <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/skullstrip_vis_s/_montage_s0/skull_vis_s.png" style="width:80%;margin: auto;">
+  
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this,-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(this,1)">&#10095;</a>
+</div>
+
+<p></p>
+<p></p>
+
+<div class="w3-content w3-display-container slider" id="div2">
+  <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/csf_gm_wm_a/montage_csf_gm_wm_a.png " style="width:80%;margin: auto;">
+  <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/csf_gm_wm_s/montage_csf_gm_wm_s.png" style="width:80%;margin: auto;">
+  
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this, -1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(this, 1)">&#10095;</a>
+
+</div>
+
+
+
+<p></p>
+<p></p>
+
+<div class="w3-content w3-display-container slider" id="div3">
+  <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/snr_a/_scan_func-1/_montage_a0/snr_a.png" style="width:80%;margin: auto;">
+  <img class="mySlides" src=" http://research.anibalsolon.com/cmi/c-pac/qc/qc/snr_s/_scan_func-1/_montage_s0/snr_s.png " style="width:80%;margin: auto;">
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this, -1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(this, 1)">&#10095;</a>
+
+</div>
+
+<script>
+var sliderObjects = [];
+createSliderObjects();
+
+function plusDivs(obj, n) {
+  var parentDiv = $(obj).parent();
+  var matchedDiv;
+  $.each(sliderObjects, function(i, item) {
+    if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+      matchedDiv = item;
+      return false;
+    }
+  });
+  matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+  showDivs(matchedDiv, matchedDiv.slideIndex);
+}
+
+function createSliderObjects() {
+  var sliderDivs = $('.slider');
+  $.each(sliderDivs, function(i, item) {
+    var obj = {};
+    obj.id = $(item).attr('id');
+    obj.divContent = item;
+    obj.slideIndex = 1;
+    obj.slideContents = $(item).find('.mySlides');
+    showDivs(obj, 1);
+    sliderObjects.push(obj);
+  });
+}
+
+function showDivs(divObject, n) {
+  debugger;
+  var i;
+  if (n > divObject.slideContents.length) {
+    divObject.slideIndex = 1
+  }
+  if (n < 1) {
+    divObject.slideIndex = divObject.slideContents.length
+  }
+  for (i = 0; i < divObject.slideContents.length; i++) {
+    divObject.slideContents[i].style.display = "none";
+  }
+  divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
+}
