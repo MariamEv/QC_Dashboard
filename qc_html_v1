@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .mySlides {display:none}
-
 .button {
     background-color: #4CAF50;
     border: none;
@@ -14,8 +13,24 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    --margin: 4px 2px;
+    margin: 4px 2px;
     cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 </style>
 
@@ -46,10 +61,23 @@
 <h2 style="text-align: center;">Subject ID:</h2>
 <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<div class="w3-container">
+
+<div class="row">
+  <div class="column">
+    <img src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/mo…ent_trans_plot/_scan_func-1/motion_trans_plot.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/movement_rot_plot/_scan_func-1/motion_rot_plot.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/fd_plot/_scan_func-1/_threshold_0.3/FD_plot.png" alt="" style="width:100%">
+  </div>
 </div>
 
 
+
+<div class="w3-container">
+</div>
 <div class="w3-content w3-display-container slider" id="div1">
   <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/skullstrip_vis_a/_montage_a0/skull_vis_a.png" style="width:80%;margin: auto;">
   <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/skullstrip_vis_s/_montage_s0/skull_vis_s.png" style="width:80%;margin: auto;">
@@ -62,7 +90,8 @@
 <p></p>
 
 <div class="w3-content w3-display-container slider" id="div2">
-  <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/csf_gm_wm_a/montage_csf_gm_wm_a.png " style="width:80%;margin: auto;">
+  <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/csf_gm_wm_a/montage_csf_gm_wm_a.png
+" style="width:80%;margin: auto;">
   <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/csf_gm_wm_s/montage_csf_gm_wm_s.png" style="width:80%;margin: auto;">
   
   <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this, -1)">&#10094;</a>
@@ -77,11 +106,14 @@
 
 <div class="w3-content w3-display-container slider" id="div3">
   <img class="mySlides" src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/snr_a/_scan_func-1/_montage_a0/snr_a.png" style="width:80%;margin: auto;">
-  <img class="mySlides" src=" http://research.anibalsolon.com/cmi/c-pac/qc/qc/snr_s/_scan_func-1/_montage_s0/snr_s.png " style="width:80%;margin: auto;">
+  <img class="mySlides" src=" http://research.anibalsolon.com/cmi/c-pac/qc/qc/snr_s/_scan_func-1/_montage_s0/snr_s.png
+" style="width:80%;margin: auto;">
   <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this, -1)">&#10094;</a>
   <a class="w3-btn-floating w3-display-right" onclick="plusDivs(this, 1)">&#10095;</a>
 
 </div>
+
+
 
 <script>
 var sliderObjects = [];
@@ -131,4 +163,3 @@ function showDivs(divObject, n) {
 
 </body>
 </html>
-}
