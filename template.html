@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quality Assurance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .mySlides {display:none}
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 5px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 1px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .column2 {
+            float: left;
+            width: 50.00%;
+            padding: 1px;
+        }
+        
+        .column4 {
+            float: left;
+            width: 3.00%;
+            padding: 1px;
+            background-color:yellow;
+        }
+	.column_right {
+		    float: right;
+		    width: 10%;
+		    padding: 1px;
+		}
+
+        
+    </style>
+
+            <script type="text/javascript">
+                var sub_id_var = 5359869;
+                </script>
+        
+</head>
+<body>
+	<div class="row"><div class="column"><a id="prev" href="/data2/Projects/Maryam/QC/QC_dashboard/a/sub-12348888.html" class="button" >&laquo;Prev</a></div><div class="column"><h2 id="sub_id" style="text-align: center;" >Subject ID:</h2></div><div class="column_right"><a id="next" href="/data2/Projects/Maryam/QC/QC_dashboard/a/sub-12348888.html" class="button" >Next&raquo;</a></div></div>
+        <div class="column_right">
+            <a id="next" href="/data2/Projects/Maryam/QC/QC_dashboard/a/sub-12348888.html" class="button" >Next&raquo;</a></div>
+	</div>
+        <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            
+<!--#################################################################### Anat #################################################################-->
+
+            
+    <div id="Anat" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+            <a href="#Anat" class="button">Anat</a>
+            <a href="#Rest1" class="button">Rest1</a>
+            <a href="#Rest2" class="button">Rest2</a>
+            <a href="#Mov1" class="button">Mov1</a>
+            <a href="#Mov2" class="button">Mov2</a>
+            <a href="#Peer1" class="button">Peer1</a>
+            <a href="#Peer2" class="button">Peer2</a>
+            <a href="#Peer3" class="button">Peer3</a>
+    </div>
+
+    <div style="background-color:#C0C0C0">
+    <h3  id="Anat" style="text-align: center; font-size:25px; color:#337AFF;margin-top: 0px; margin-bottom: 0px; "><b>Anatomical</b></h3>
+
+        
+        <h2 id="SkullStrip" style="text-align: Left; font-size:20px;"></h2>
+        <div class="row">
+            <div class="column2"> <b>SkullStrip</b><img src="/data2/Projects/Maryam/QC/CPAC_run/output/pipeline_cpac_default__freq-filter__scrub/sub-5359869_ses-1/anatomical_brain/sub-5359869_acq-HCP_T1w_resample_calc_mask_2_slices_001.png" alt="" style="width:100%">
+            </div>
+            <!--<div class="column2">
+                <img src="http://research.anibalsolon.com/cmi/c-pac/qc/qc/skullstrip_vis_s/_montage_s0/skull_vis_s.png"
+                    alt="" style="width:100%">
+            </div>-->
+	<div class="column2"><b>T1</b>
+                <img src="/data2/Projects/Maryam/QC/CPAC_run/output/pipeline_cpac_default__freq-filter__scrub/sub-5359869_ses-1/anatomical_brain/sub-5359869_acq-HCP_T1w_resample_calc_slices_002.png" alt="" style="width:100%">
+            </div>
+
+        </div>
+
+            <div style="color:#4CAF50"> Anatomical>>
+                <a href="#SkullStrip" class="button">SkullStrip</a>
+                <a href="#T1" class="button">T1</a>
+                <a href="#Registration" class="button">Reg</a>
+                <a href="#GM_WM_CSF" class="button">GM_WM_CSF</a>
+                <a href="#Anat" class="button">Top Anatomical</a>
+
+            </div>
+
+
+    
+
+        <h2 id="Registration" style="text-align: Left; font-size:20px;"><b>Registration</b></h2>
+        <div class="row">
+            <div class="column2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Page_Under_Construction.png" alt="" style="width:100%">
+            </div>
+            <div class="column2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Page_Under_Construction.png" alt="" style="width:100%">
+            </div>
+
+        </div>
+
+            <div style="color:#4CAF50">Anatomical>>
+            <a href="#SkullStrip" class="button">SkullStrip</a>
+            <a href="#T1" class="button">T1</a>
+            <a href="#Registration" class="button">Reg.</a>
+            <a href="#GM_WM_CSF" class="button">GM_WM_CSF</a>
+            <a href="#Anat" class="button">Top Anatomical</a>
+
+            </div>
+
+
+        <h2 id="GM_WM_CSF" style="text-align: Left; font-size:20px;"><b>Grey Matter, White Matter, CSF</b></h2>
+        <div class="row">
+            <div class="column2">
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/csf_gm_wm_a/montage_csf_gm_wm_a.png" alt=""
+                    style="width:100%">
+            </div>
+            <div class="column2">
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/csf_gm_wm_s/montage_csf_gm_wm_s.png" alt=""
+                    style="width:100%">
+            </div>
+
+        </div>
+
+            <div style="color:#4CAF50">Anatomical>>
+                <a href="#SkullStrip" class="button">SkullStrip</a>
+                <a href="#T1" class="button">T1</a>
+                <a href="#Registration" class="button">Reg.</a>
+                <a href="#GM_WM_CSF" class="button">GM_WM_CSF</a>
+                <a href="#Anat" class="button">Top Anatomical</a>
+
+            </div>
+
+    </div>
+
+
+<!--#################################################################### rest 1 #################################################################-->
+    
+
+
+    <script src="./jquery-3.3.1.min.js"></script>
+
+    <div id="Rest1" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+                <a href="#Anat" class="button">Anat</a>
+                <a href="#Rest1" class="button">Rest1</a>
+                <a href="#Rest2" class="button">Rest2</a>
+                <a href="#Mov1" class="button">Mov1</a>
+                <a href="#Mov2" class="button">Mov2</a>
+                <a href="#Peer1" class="button">Peer1</a>
+                <a href="#Peer2" class="button">Peer2</a>
+                <a href="#Peer3" class="button">Peer3</a>
+    </div>
+
+  <div style="background-color:LightSteelBlue">
+      <h3  id="Rest1" style="text-align: center; font-size:25px; color:#337AFF; margin-top: 0px; margin-bottom: 0px;"><b>Rest1</b></h3>
+
+       <h2 id="hmr1" style="text-align: Left; font-size:20px;"><b>Head Displacement Plots</b></h2>
+        <div class="row">
+            <div class="column"> Head Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_trans_plot/_scan_task-rest_run-1/motion_trans_plot.png"
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Head Rotation Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_rot_plot/_scan_task-rest_run-1/motion_rot_plot.png"
+
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Framewise Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/fd_plot/_scan_task-rest_run-1/_threshold_0.5/FD_plot.png"
+                    alt="" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_rest_run_1.png"
+                    alt="" style="width:100%">
+            </div>
+        </div>
+        <div style="color:#4CAF50"> Rest1>>
+                <a href="#hmr1" class="button">HD</a>
+                <a href="#regr1" class="button">Reg</a>
+                <a href="#snrr1" class="button">SNR</a>
+                <a href="#ReHor1" class="button">ReHo</a>
+                <a href="#Rest1" class="button">Top Rest1</a>
+
+        </div>
+
+		 <h2 id="snrr1" style="text-align: Left; font-size:20px;"><b>SNR</b></h2>
+       		 <div class="row">
+            		<div class="column"> SNR_a
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_a/_scan_task-rest_run-1/_montage_a0/snr_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">SNR_s
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_s/_scan_task-rest_run-1/_montage_s0/snr_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">snr hist plot
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_hist/_scan_task-rest_run-1/snr_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+
+            <div style="color:#4CAF50">Rest1 >>
+                 <a href="#hmr1" class="button">HD</a>
+                <a href="#regr1" class="button">Reg</a>
+                <a href="#snrr1" class="button">SNR</a>
+                <a href="#ReHor1" class="button">ReHo</a>
+                <a href="#Rest1" class="button">Top Rest1</a>
+
+            </div>
+	    </div>
+
+
+		 <h2 id="ReHor1" style="text-align: Left; font-size:20px;"><b>Regional Homogeneity</b></h2>
+       		 <div class="row">
+            		<div class="column"> Regional Homogeneity
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_a/_scan_task-rest_run-1/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_a0/reho_to_standard_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">,,
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_s/_scan_task-rest_run-1/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_s0/reho_to_standard_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">Histogram of Regional Homogeneity
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_hist/_scan_task-rest_run-1/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/reho_to_standard_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+
+            <div style="color:#4CAF50"> Rest1 >>
+                <a href="#hmr1" class="button">HD</a>
+                <a href="#regr1" class="button">Reg</a>
+                <a href="#ReHor1" class="button">ReHo</a>
+                <a href="#snrr1" class="button">SNR</a>
+                <a href="#Rest1" class="button">Top Rest1</a>
+            </div>
+	    </div>
+
+        <div>/***************** Registration will be FILLED soon *****************</div>
+
+  </div>
+  
+  <div id="Rest2" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+                <a href="#Anat" class="button">Anat</a>
+                <a href="#Rest1" class="button">Rest1</a>
+                <a href="#Rest2" class="button">Rest2</a>
+                <a href="#Mov1" class="button">Mov1</a>
+                <a href="#Mov2" class="button">Mov2</a>
+                <a href="#Peer1" class="button">Peer1</a>
+                <a href="#Peer2" class="button">Peer2</a>
+                <a href="#Peer3" class="button">Peer3</a>
+    </div>
+
+
+
+<!--#################################################################### rest 2 #################################################################-->
+
+
+  <div style="background-color:#C0C0C0">
+      <h3  id="Rest2" style="text-align: center; font-size:25px; color:#337AFF;margin-top: 0px; margin-bottom: 0px;"><b>Rest2</b></h3>
+   	
+	<h2 id="hmr2" style="text-align: Left; font-size:20px;"><b>Head Displacement Plots</b></h2>
+        <div class="row">
+            <div class="column"> Head Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_trans_plot/_scan_task-rest_run-2/motion_trans_plot.png"
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Head Rotation Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_rot_plot/_scan_task-rest_run-2/motion_rot_plot.png"
+
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Framewise Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/fd_plot/_scan_task-rest_run-2/_threshold_0.5/FD_plot.png"
+                    alt="" style="width:100%">
+            </div>
+    </div>
+    <div class="row">
+            <div class="column">
+                <img src="/data2/Projects/Maryam/QC/FD_images/__MeanFD_func_rest_run_2.png"
+                    alt="" style="width:100%">
+            </div>
+    </div>
+
+            <div style="color:#4CAF50"> Rest2 >>
+                <a href="#hmr2" class="button">HD</a>
+                <a href="#regr2" class="button">Reg</a>
+                <a href="#snrr2" class="button">SNR</a>
+                <a href="#ReHor2" class="button">ReHo</a>
+                <a href="#Rest2" class="button">Top Rest2</a>
+            </div>
+
+		 <h2 id="snrr2" style="text-align: Left; font-size:20px;"><b>SNR</b></h2>
+       		 <div class="row">
+            		<div class="column"> SNR_a
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_a/_scan_task-rest_run-2/_montage_a0/snr_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">SNR_s
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_s/_scan_task-rest_run-2/_montage_s0/snr_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">snr hist plot
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_hist/_scan_task-rest_run-2/snr_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+        </div>
+
+            <div style="color:#4CAF50"> Rest2 >>
+                 <a href="#hmr2" class="button">HD</a>
+                <a href="#regr2" class="button">Reg</a>
+                <a href="#snrr2" class="button">SNR</a>
+                <a href="#ReHor2" class="button">ReHo</a>
+                <a href="#Rest2" class="button">Top Rest2</a>
+            </div>
+
+
+		 <h2 id="ReHor2" style="text-align: Left; font-size:20px;"><b>Regional Homogeneity</b></h2>
+       		 <div class="row">
+            		<div class="column"> Regional Homogeneity
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_a/_scan_task-rest_run-2/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_a0/reho_to_standard_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">,,
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_s/_scan_task-rest_run-2/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_s0/reho_to_standard_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">Histogram of Regional Homogeneity
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_hist/_scan_task-rest_run-2/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/reho_to_standard_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_rest_run_2.png"
+                    alt="" style="width:100%">
+            </div>
+        </div>
+
+            <div style="color:#4CAF50"> Rest2 >>
+                <a href="#hmr2" class="button">HD</a>
+                <a href="#regr2" class="button">Reg</a>
+                <a href="#snrr2" class="button">SNR</a>
+                <a href="#ReHor2" class="button">ReHo</a>
+                <a href="#Rest2" class="button">Top Rest2</a>
+            </div>
+            <div>/***************** Registration will be FILLED soon *****************</div>
+
+  </div>
+  
+ <div id="Mov1" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+                <a href="#Anat" class="button">Anat</a>
+                <a href="#Rest1" class="button">Rest1</a>
+                <a href="#Rest2" class="button">Rest2</a>
+                <a href="#Mov1" class="button">Mov1</a>
+                <a href="#Mov2" class="button">Mov2</a>
+                <a href="#Peer1" class="button">Peer1</a>
+                <a href="#Peer2" class="button">Peer2</a>
+                <a href="#Peer3" class="button">Peer3</a>
+ </div>
+
+
+
+
+<!--#################################################################### Movi 1 #################################################################-->
+
+
+
+  <div style="background-color:LightSteelBlue">
+      <h3  id="Mov1" style="text-align: center; font-size:25px; color:#337AFF;  margin-top: 0px; margin-bottom: 0px;"><b>Movie 1</b></h3>
+	<h2 id="hmm1" style="text-align: Left; font-size:20px;"><b>Head Displacement Plots</b></h2>
+        <div class="row">
+            <div class="column"> Head Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_trans_plot/_scan_task-movieTP/motion_trans_plot.png"
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Head Rotation Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_rot_plot/_scan_task-movieTP/motion_rot_plot.png"
+
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Framewise Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/fd_plot/_scan_task-movieTP/_threshold_0.5/FD_plot.png"
+                    alt="" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_movieTP.png"
+                    alt="" style="width:100%">
+            </div>
+        </div>
+
+              <div style="color:#4CAF50"> Movie1 >>
+                <a href="#hmm1" class="button">HD</a>
+                <a href="#regm1" class="button">Reg</a>
+                <a href="#snrm1" class="button">SNR</a>
+                <a href="#ReHom1" class="button">ReHo</a>
+                <a href="#Mov1" class="button">Top Movie1</a>
+            </div>
+
+		 <h2 id="snrm1" style="text-align: Left; font-size:20px;"><b>SNR</b></h2>
+       		 <div class="row">
+            		<div class="column"> SNR_a
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_a/_scan_task-movieTP/_montage_a0/snr_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">SNR_s
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_s/_scan_task-movieTP/_montage_s0/snr_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">snr hist plot
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_hist/_scan_task-movieTP/snr_hist_plot.png"
+                    alt="" style="width:100%">
+           	     </div>
+             </div>
+             <div class="row">
+                <div class="column">
+                   <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_movieTP.png"
+                    alt="" style="width:100%">
+                </div>
+             </div>
+
+            <div style="color:#4CAF50"> Movie1 >>
+                <a href="#hmm1" class="button">HD</a>
+                <a href="#regm1" class="button">Reg</a>
+                <a href="#snrm1" class="button">SNR</a>
+                <a href="#ReHom1" class="button">ReHo</a>
+                <a href="#Mov1" class="button">Top Movie1</a>
+            </div>
+
+		 <h2 id="ReHom1" style="text-align: Left; font-size:20px;"><b>Regional Homogeneity</b></h2>
+       		 <div class="row">
+            		<div class="column"> Regional Homogeneity
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_a/_scan_task-movieTP/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_a0/reho_to_standard_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">,,
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_s/_scan_task-movieTP/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_s0/reho_to_standard_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">Histogram of Regional Homogeneity
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_hist/_scan_task-movieTP/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/reho_to_standard_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+             </div>
+
+            <div style="color:#4CAF50"> Movie1 >>
+                <a href="#hmm1" class="button">HD</a>
+                <a href="#regm1" class="button">Reg</a>
+                <a href="#snrm1" class="button">SNR</a>
+                <a href="#ReHom1" class="button">ReHo</a>
+                <a href="#Mov1" class="button">Top Movie1</a>
+            </div>
+
+            <div>/***************** Registration will be FILLED soon *****************</div>
+  </div>
+  
+  <div id="Mov2" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+                <a href="#Anat" class="button">Anat</a>
+                <a href="#Rest1" class="button">Rest1</a>
+                <a href="#Rest2" class="button">Rest2</a>
+                <a href="#Mov1" class="button">Mov1</a>
+                <a href="#Mov2" class="button">Mov2</a>
+                <a href="#Peer1" class="button">Peer1</a>
+                <a href="#Peer2" class="button">Peer2</a>
+                <a href="#Peer3" class="button">Peer3</a>
+
+
+<!--#################################################################### Movi 2 #################################################################-->
+
+ </div>
+  <div style="background-color:#C0C0C0">
+      <h3  id="Mov2" style="text-align: center; font-size:25px; color:#337AFF; margin-top: 0px; margin-bottom: 0px;"><b>Movie 2</b></h3>
+	<h2 id="hmm2" style="text-align: Left; font-size:20px;"><b>Head Displacement Plots</b></h2>
+        <div class="row">
+            <div class="column"> Head Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_trans_plot/_scan_task-movieDM/motion_trans_plot.png"
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Head Rotation Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_rot_plot/_scan_task-movieDM/motion_rot_plot.png"
+
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Framewise Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/fd_plot/_scan_task-movieDM/_threshold_0.5/FD_plot.png"
+                    alt="" style="width:100%">
+            </div>
+       </div>
+       <div class="row">
+            <div class="column">
+                <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_movieDM.png"
+                    alt="" style="width:100%">
+            </div>
+        </div>
+
+            <div style="color:#4CAF50"> Movie2 >>
+                <a href="#hmm2" class="button">HD</a>
+                <a href="#regm2" class="button">Reg</a>
+                <a href="#snrm2" class="button">SNR</a>
+                <a href="#ReHom2" class="button">ReHo</a>
+                <a href="#Mov2" class="button">Top Movie2</a>
+            </div>
+
+		 <h2 id="snrm2" style="text-align: Left; font-size:20px;"><b>SNR</b></h2>
+       		 <div class="row">
+            		<div class="column"> SNR_a
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_a/_scan_task-movieDM/_montage_a0/snr_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">SNR_s
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_s/_scan_task-movieDM/_montage_s0/snr_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">snr hist plot
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_hist/_scan_task-movieDM/snr_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+       </div>
+
+            <div class="row">
+                <div class="column">
+                  <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_movieDM.png"
+                       alt="" style="width:100%">
+                </div>
+             </div>
+
+
+            <div style="color:#4CAF50"> Movie2 >>
+                <a href="#hmm2" class="button">HD</a>
+                <a href="#regm2" class="button">Reg</a>
+                <a href="#snrm2" class="button">SNR</a>
+                <a href="#ReHom2" class="button">ReHo</a>
+                <a href="#Mov2" class="button">Top Movie2</a>
+            </div>
+
+		 <h2 id="ReHom2" style="text-align: Left; font-size:20px;"><b>Regional Homogeneity</b></h2>
+       		 <div class="row">
+            		<div class="column"> Regional Homogeneity
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_a/_scan_task-movieDM/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_a0/reho_to_standard_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">,,
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_s/_scan_task-movieDM/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_s0/reho_to_standard_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">Histogram of Regional Homogeneity
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_hist/_scan_task-movieDM/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/reho_to_standard_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+       </div>
+
+            <div style="color:#4CAF50"> Movie2 >>
+                <a href="#hmm2" class="button">HD</a>
+                <a href="#regm2" class="button">Reg</a>
+                <a href="#snrm2" class="button">SNR</a>
+                <a href="#ReHom2" class="button">ReHo</a>
+                <a href="#Mov2" class="button">Top Movie2</a>
+            </div>
+
+            <div>/***************** Registration will be FILLED soon *****************</div>
+
+  </div>
+  
+   <div id="Peer1" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+                <a href="#Anat" class="button">Anat</a>
+                <a href="#Rest1" class="button">Rest1</a>
+                <a href="#Rest2" class="button">Rest2</a>
+                <a href="#Mov1" class="button">Mov1</a>
+                <a href="#Mov2" class="button">Mov2</a>
+                <a href="#Peer1" class="button">Peer1</a>
+                <a href="#Peer2" class="button">Peer2</a>
+                <a href="#Peer3" class="button">Peer3</a>
+ </div>
+
+
+
+<!--#################################################################### Peer 1 #################################################################-->
+
+
+
+  <div style="background-color:LightSteelBlue">
+      <h3  id="Peer1" style="text-align: center; font-size:25px; color:#337AFF;margin-top: 0px; margin-bottom: 0px;"><b>Peer 1</b></h3>
+	<h2 id="hmp1" style="text-align: Left; font-size:20px;"><b>Head Displacement Plots</b></h2>
+        <div class="row">
+            <div class="column"> Head Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_trans_plot/_scan_task-peer_run-1/motion_trans_plot.png"
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Head Rotation Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_rot_plot/_scan_task-peer_run-1/motion_rot_plot.png"
+
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Framewise Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/fd_plot/_scan_task-peer_run-1/_threshold_0.5/FD_plot.png"
+                    alt="" style="width:100%">
+            </div>
+
+
+    </div>
+
+    <div class="row">
+            <div class="column">
+                <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_peer_run_1.png"
+                    alt="" style="width:100%">
+            </div>
+    </div>
+
+            <div  style="color:#4CAF50"> Peer1 >>
+                <a href="#hmp1" class="button">HD</a>
+                <a href="#regp1" class="button">Reg</a>
+                <a href="#snrp1" class="button">SNR</a>
+                <a href="#ReHop1" class="button">ReHo</a>
+                <a href="#Peer1" class="button">Top Peer1</a>
+            </div>
+
+		 <h2 id="snrp1" style="text-align: Left; font-size:20px;"><b>SNR</b></h2>
+       		 <div class="row">
+            		<div class="column"> SNR_a
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_a/_scan_task-peer_run-1/_montage_a0/snr_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">SNR_s
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_s/_scan_task-peer_run-1/_montage_s0/snr_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">snr hist plot
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_hist/_scan_task-peer_run-1/snr_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+        </div>
+
+            <div  style="color:#4CAF50"> Peer1 >>
+                <a href="#hmp1" class="button">HD</a>
+                <a href="#regp1" class="button">Reg</a>
+                <a href="#snrp1" class="button">SNR</a>
+                <a href="#ReHop1" class="button">ReHo</a>
+                <a href="#Peer1" class="button">Top Peer1</a>
+            </div>
+
+
+
+		 <h2 id="ReHop1" style="text-align: Left; font-size:20px;"><b>Regional Homogeneity</b></h2>
+       		 <div class="row">
+            		<div class="column"> Regional Homogeneity
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_a/_scan_task-peer_run-1/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_a0/reho_to_standard_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">,,
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_s/_scan_task-peer_run-1/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_s0/reho_to_standard_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">Histogram of Regional Homogeneity
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_hist/_scan_task-peer_run-1/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/reho_to_standard_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+        </div>
+
+                <div  style="color:#4CAF50"> Peer1 >>
+                <a href="#hmp1" class="button">HD</a>
+                <a href="#regp1" class="button">Reg</a>
+                <a href="#snrp1" class="button">SNR</a>
+                <a href="#ReHop1" class="button">ReHo</a>
+                <a href="#Peer1" class="button">Top Peer1</a>
+            </div>
+
+
+            <div>/***************** Registration will be FILLED soon *****************</div>
+
+  </div>
+ 
+  <div id="Peer2" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+                <a href="#Anat" class="button">Anat</a>
+                <a href="#Rest1" class="button">Rest1</a>
+                <a href="#Rest2" class="button">Rest2</a>
+                <a href="#Mov1" class="button">Mov1</a>
+                <a href="#Mov2" class="button">Mov2</a>
+                <a href="#Peer1" class="button">Peer1</a>
+                <a href="#Peer2" class="button">Peer2</a>
+                <a href="#Peer3" class="button">Peer3</a>
+ </div>
+  <div style="background-color:#C0C0C0">
+
+<!--#################################################################### Peer 2 #################################################################-->
+
+      <h3  id="Peer2" style="text-align: center; font-size:25px; color:#337AFF; margin-top: 0px; margin-bottom: 0px;"><b>Peer 2</b></h3>
+	<h2 id="hmp2" style="text-align: Left; font-size:20px;"><b>Head Displacement Plots</b></h2>
+        <div class="row">
+            <div class="column"> Head Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_trans_plot/_scan_task-peer_run-2/motion_trans_plot.png"
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Head Rotation Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_rot_plot/_scan_task-peer_run-2/motion_rot_plot.png"
+
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Framewise Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/fd_plot/_scan_task-peer_run-2/_threshold_0.5/FD_plot.png"
+                    alt="" style="width:100%">
+            </div>
+    </div>
+    <div class="row">
+            <div class="column">
+                <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_peer_run_2.png"
+                    alt="" style="width:100%">
+            </div>
+    </div>
+            <div  style="color:#4CAF50"> Peer2 >>
+                <a href="#hmp12" class="button">HD</a>
+                <a href="#regp2" class="button">Reg</a>
+                <a href="#snrp2" class="button">SNR</a>
+                <a href="#ReHop2" class="button">ReHo</a>
+                <a href="#Peer2" class="button">Top Peer2</a>
+            </div>
+
+
+		 <h2 id="snrp2" style="text-align: Left; font-size:20px;"><b>SNR</b></h2>
+       		 <div class="row">
+            		<div class="column"> SNR_a
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_a/_scan_task-peer_run-2/_montage_a0/snr_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">SNR_s
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_s/_scan_task-peer_run-2/_montage_s0/snr_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">snr hist plot
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_hist/_scan_task-peer_run-2/snr_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+
+            <div  style="color:#4CAF50"> Peer2 >>
+                <a href="#hmp2" class="button">HD</a>
+                <a href="#regp2" class="button">Reg</a>
+                <a href="#snrp2" class="button">SNR</a>
+                <a href="#ReHop2" class="button">ReHo</a>
+                <a href="#Peer2" class="button">Top Peer2</a>
+            </div>
+
+
+
+		 <h2 id="ReHop2" style="text-align: Left; font-size:20px;"><b>Regional Homogeneity</b></h2>
+       		 <div class="row">
+            		<div class="column"> Regional Homogeneity
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_a/_scan_task-peer_run-2/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_a0/reho_to_standard_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">,,
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_s/_scan_task-peer_run-2/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_s0/reho_to_standard_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">Histogram of Regional Homogeneity
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_hist/_scan_task-peer_run-2/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/reho_to_standard_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+
+            <div  style="color:#4CAF50"> Peer2 >>
+                <a href="#hmp2" class="button">HD</a>
+                <a href="#regp2" class="button">Reg</a>
+                <a href="#snrp2" class="button">SNR</a>
+                <a href="#ReHop2" class="button">ReHo</a>
+                <a href="#Peer2" class="button">Top Peer2</a>
+            </div>
+
+	    </div>
+
+            <div>/***************** Registration will be FILLED soon *****************</div>
+
+  </div>
+  
+  <div id="Peer3" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+                <a href="#Anat" class="button">Anat</a>
+                <a href="#Rest1" class="button">Rest1</a>
+                <a href="#Rest2" class="button">Rest2</a>
+                <a href="#Mov1" class="button">Mov1</a>
+                <a href="#Mov2" class="button">Mov2</a>
+                <a href="#Peer1" class="button">Peer1</a>
+                <a href="#Peer2" class="button">Peer2</a>
+                <a href="#Peer3" class="button">Peer3</a>
+ </div>
+
+
+ <!--#################################################################### Peer 3 #################################################################-->
+
+
+  <div style="background-color:LightSteelBlue">
+      <h3  id="Peer3" style="text-align: center; font-size:25px; color:#337AFF; margin-top: 0px; margin-bottom: 0px;"><b>Peer 3</b></h3>
+	<h2 id="hmp3" style="text-align: Left; font-size:20px;"><b>Head Displacement Plots</b></h2>
+        <div class="row">
+            <div class="column"> Head Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_trans_plot/_scan_task-peer_run-3/motion_trans_plot.png"
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Head Rotation Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/movement_rot_plot/_scan_task-peer_run-3/motion_rot_plot.png"
+
+                    alt="" style="width:100%">
+            </div>
+            <div class="column">Framewise Displacement Plot
+                <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/fd_plot/_scan_task-peer_run-3/_threshold_0.5/FD_plot.png"
+                    alt="" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="/data2/Projects/Maryam/QC/FD_images/_MeanFD_func_peer_run_3.png"
+                    alt="" style="width:100%">
+            </div>
+        </div>
+        <div  style="color:#4CAF50"> Pee3 >>
+                <a href="#hmp3" class="button">HD</a>
+                <a href="#regp3" class="button">Reg</a>
+                <a href="#snrp3" class="button">SNR</a>
+                <a href="#ReHop3" class="button">ReHo</a>
+                <a href="#Peer3" class="button">Top Peer3</a>
+            </div>
+
+
+		 <h2 id="snrp3" style="text-align: Left; font-size:20px;"><b>SNR</b></h2>
+       		<div class="row">
+            		<div class="column"> SNR_a
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_a/_scan_task-peer_run-3/_montage_a0/snr_a.png"
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">SNR_s
+                	<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_s/_scan_task-peer_run-3/_montage_s0/snr_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">snr hist plot
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/snr_hist/_scan_task-peer_run-3/snr_hist_plot.png"
+                    alt="" style="width:100%">
+           	 </div>
+            </div>
+
+            <div  style="color:#4CAF50"> Pee3 >>
+                <a href="#hmp3" class="button">HD</a>
+                <a href="#regp3" class="button">Reg</a>
+                <a href="#snrp3" class="button">SNR</a>
+                <a href="#ReHop3" class="button">ReHo</a>
+                <a href="#Peer3" class="button">Top Peer3</a>
+            </div>
+
+		 <h2 id="ReHop3" style="text-align: Left; font-size:20px;"><b>Regional Homogeneity</b></h2>
+       		 <div class="row">
+            		<div class="column"> Regional Homogeneity
+               		 <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_a/_scan_task-peer_run-3/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_a0/reho_to_standard_a.png"
+                    alt="" style="width:100%">
+			</div>
+            	 	<div class="column">,,
+                		<img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_s/_scan_task-peer_run-3/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/_montage_s0/reho_to_standard_s.png"
+
+                    alt="" style="width:100%">
+            	 </div>
+            	 <div class="column">Histogram of Regional Homogeneity
+             	   <img src="/data2/Projects/Maryam/QC/QC_imgs/pipeline_cpac_default/sub-5359869_ses-1/qc/reho_to_standard_hist/_scan_task-peer_run-3/_compcor_ncomponents_5_selector_pc10.linear1.wm0.global0.motion1.quadratic1.gm0.compcor1.csf1/reho_to_standard_hist_plot.png"
+                    alt="" style="width:100%">
+             	 </div>
+            </div>
+
+            <div  style="color:#4CAF50"> Pee3 >>
+                <a href="#hmp3" class="button">HD</a>
+                <a href="#regp3" class="button">Reg</a>
+                <a href="#snrp3" class="button">SNR</a>
+                <a href="#ReHop3" class="button">ReHo</a>
+                <a href="#Peer3" class="button">Top Peer3</a>
+            </div>
+
+
+            <div>/***************** Registration will be FILLED soon *****************</div>
+
+  </div>
+
+    <div id="Peer3" style="background-color:black; margin-top: 0px; margin-bottom: 0px;">
+                <a href="#Anat" class="button">Anat</a>
+                <a href="#Rest1" class="button">Rest1</a>
+                <a href="#Rest2" class="button">Rest2</a>
+                <a href="#Mov1" class="button">Mov1</a>
+                <a href="#Mov2" class="button">Mov2</a>
+                <a href="#Peer1" class="button">Peer1</a>
+                <a href="#Peer2" class="button">Peer2</a>
+                <a href="#Peer3" class="button">Peer3</a>
+ </div>
+
+</body>
+</html>
+
